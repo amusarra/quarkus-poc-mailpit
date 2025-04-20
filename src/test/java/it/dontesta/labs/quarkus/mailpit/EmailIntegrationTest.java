@@ -33,10 +33,7 @@ public class EmailIntegrationTest {
     // Step 1: Chiamata all'endpoint che invia l'email
     RestAssured.get("/send").then().statusCode(200);
 
-    // Attendi che Mailpit riceva l'email
-    Thread.sleep(1000);
-
-    // look up the mail and assert it
+    // Step 2: Look up email in Mailpit ed esecuzione delle asserzioni
     Message message = mailbox.findFirst("no-reply@example.com");
     assertThat(message, notNullValue());
     assertThat(message.getTo().get(0).getAddress(), is("test@example.com"));
