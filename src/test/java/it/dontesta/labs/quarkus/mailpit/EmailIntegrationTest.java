@@ -17,7 +17,7 @@ import org.junit.jupiter.api.Test;
 
 @QuarkusTest
 @WithMailbox
-public class EmailIntegrationTest {
+class EmailIntegrationTest {
 
   @InjectMailbox
   Mailbox mailbox;
