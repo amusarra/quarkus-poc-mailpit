@@ -1,8 +1,34 @@
-# quarkus-poc-mailpit
+# Mailpit POC with Quarkus
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
+This project demonstrates how to integrate Quarkus with Mailpit for local email testing during development.
+It provides a simple example of sending an email from a Quarkus application
+and verifying that it is received by Mailpit.
+
+The project is related to the blog post on the [Codemotion Magazine](https://www.codemotion.com/magazine/it/author/amusarra/).
 
 If you want to learn more about Quarkus, please visit its website: <https://quarkus.io/>.
+
+## Functionality
+
+The application exposes a REST endpoint that, when called, sends a simple email. Mailpit is used as an in-memory email 
+testing tool, capturing all emails sent by the application. This allows developers to verify email sending functionality 
+without configuring a real SMTP server or sending actual emails.
+
+## Modules Used
+
+-   `quarkus-rest`: Provides the REST endpoint for triggering the email sending.
+-   `quarkus-arc`: Core module for dependency injection.
+-   `quarkus-mailer`: Simplifies sending emails.
+-   `quarkus-mailpit`: Integrates Mailpit with Quarkus for local email testing.
+-   `quarkus-mailpit-testing`: Provides utilities for testing Mailpit integration.
+-   `quarkus-junit5`: JUnit 5 extension for Quarkus.
+-   `rest-assured`: Used for testing the REST endpoint.
+
+## Prerequisites
+
+-   Java 21+
+-   Maven 3.9+
+-   Docker or Podman (optional, for running Mailpit in a container)
 
 ## Running the application in dev mode
 
