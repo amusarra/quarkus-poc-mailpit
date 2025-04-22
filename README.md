@@ -56,11 +56,6 @@ If you want to learn more about building native executables, please consult <htt
 ## Related Guides
 
 - REST ([guide](https://quarkus.io/guides/rest)): A Jakarta REST implementation utilizing build time processing and Vert.x. This extension is not compatible with the quarkus-resteasy extension, or any of the extensions that depend on it.
-
-## Provided Code
-
-### REST
-
-Easily start your REST Web Services
-
-[Related guide section...](https://quarkus.io/guides/getting-started-reactive#reactive-jax-rs-resources)
+- Mailer ([guide](https://quarkus.io/guides/mailer)): Send emails with a simple and easy to use API.
+- Configuration ([guide](https://quarkus.io/guides/config)): Configure your application with application.properties, YAML files, environment variables and more.
+- Testing ([guide](https://quarkus.io/guides/getting-started-testing)): Write tests for your Quarkus applications.
